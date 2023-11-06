@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "AcFi3/gC62bnXLDkcOuVOQMW1Xw8Uobf3M6Vx6G/NO5jIRbNq69IdzoiFzy8EwyPkf9x55pDZF3+yWokpCSiaQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\akhyle\\source\\repos\\XafTutorial\\Blazor\\BlazorTutorial\\BlazorTutorial.App\\BlazorTutorial.App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\akhyle\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512"
+  ],
+  "logs": []
+}

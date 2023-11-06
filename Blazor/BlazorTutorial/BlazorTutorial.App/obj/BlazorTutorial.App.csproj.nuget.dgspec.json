@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\akhyle\\source\\repos\\XafTutorial\\Blazor\\BlazorTutorial\\BlazorTutorial.App\\BlazorTutorial.App.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\akhyle\\source\\repos\\XafTutorial\\Blazor\\BlazorTutorial\\BlazorTutorial.App\\BlazorTutorial.App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\akhyle\\source\\repos\\XafTutorial\\Blazor\\BlazorTutorial\\BlazorTutorial.App\\BlazorTutorial.App.csproj",
+        "projectName": "BlazorTutorial.App",
+        "projectPath": "C:\\Users\\akhyle\\source\\repos\\XafTutorial\\Blazor\\BlazorTutorial\\BlazorTutorial.App\\BlazorTutorial.App.csproj",
+        "packagesPath": "C:\\Users\\akhyle\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\akhyle\\source\\repos\\XafTutorial\\Blazor\\BlazorTutorial\\BlazorTutorial.App\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 23.1\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\akhyle\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
