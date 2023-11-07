@@ -10,8 +10,6 @@
 
 <h4>Parameter 1: @Parameter1</h4>
 <h4>Parameter 2: @Parameter2</h4>
-@*
-<a href="learnRouting?Param1=Tangy&Param2=Blazor" class="btn btn-primary">Navigate to query parameter</a>*@
 <button @onclick="NavigateToQueryParam" class="btn btn-primary">Navigate to query parameter</button>
 <button class="btn btn-success" @onclick="LoadParameters">Load Parameters</button>
 <br />
@@ -38,7 +36,7 @@
 
     private void NavigateToQueryParam()
     {
-        _NavigationManager.NavigateTo("learnRouting?Param1=Tangy&Param2=Blazor");
+        _NavigationManager.NavigateTo("learnRouting?Param1=Tutorial&Param2=Blazor");
     }
 
 }
