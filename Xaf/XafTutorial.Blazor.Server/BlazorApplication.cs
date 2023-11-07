@@ -13,11 +13,6 @@ public class XafTutorialBlazorApplication : BlazorApplication {
         CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema;
         DatabaseVersionMismatch += XafTutorialBlazorApplication_DatabaseVersionMismatch;
     }
-    protected override void CreateDefaultObjectSpaceProvider(CreateCustomObjectSpaceProviderEventArgs args)
-    {
-        base.CreateDefaultObjectSpaceProvider(args);
-        args.ObjectSpaceProviders.Add(new NonPersistentObjectSpaceProvider(TypesInfo, null));
-    }
     protected override void OnSetupStarted() {
         base.OnSetupStarted();
 #if DEBUG
