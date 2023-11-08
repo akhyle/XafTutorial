@@ -361,3 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Blazor/BlazorTutorial/BlazorTutorial.App/obj/Debug/net6.0/BlazorTutorial.App.GeneratedMSBuildEditorConfig.editorconfig
+/Blazor/BlazorTutorial/BlazorTutorial.App/obj/Release/net6.0/BlazorTutorial.App.GeneratedMSBuildEditorConfig.editorconfig
+/.vs/slnx.sqlite
+/.vs/XafTutorial/v17/.wsuo
+/.vs/XafTutorial/v17/.suo
