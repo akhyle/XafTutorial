@@ -1,4 +1,5 @@
-﻿using DevExpress.ExpressApp;
+﻿using DevExpress.Data.Filtering;
+using DevExpress.ExpressApp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,17 +9,25 @@ using XafTutorial.Module.BusinessObjects;
 
 namespace XafTutorial.Module.Controllers
 {
-    public class NonPersistentObjectActivatorController : ObjectViewController<DetailView, CurrentTask>
+    public class NonPersistentObjectActivatorController : ObjectViewController<ListView, CurrentTask>
     {
         protected override void OnActivated()
         {
+            const string Criteria = "Priority == 'High' OR Status == 'InProgress'";
             base.OnActivated();
 
-            if ((ObjectSpace is NonPersistentObjectSpace) && (View.CurrentObject == null))
+            var correctTasks = ObjectSpace.GetObjects<DemoTask>(CriteriaOperator.Parse(Criteria)).ToList();
+
+            foreach (var item in correctTasks)
             {
-                View.CurrentObject = ObjectSpace.CreateObject(View.ObjectTypeInfo.Type);
-                View.ViewEditMode = DevExpress.ExpressApp.Editors.ViewEditMode.Edit;
+                var currentTask = ObjectSpace.CreateObject<CurrentTask>();
+                currentTask.Summary = item.Subject;
+                currentTask.Priority = item.Priority;
+
+                View.CollectionSource.Add(currentTask);
             }
+
+            ObjectSpace.CommitChanges();
         }
     }
 }
